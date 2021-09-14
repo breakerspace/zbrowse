@@ -49,11 +49,9 @@ function getChromeInstance() {
 
 function enableInstanceProperties(instance) {
     
-    userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36";
+    userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/69.0.3497.105 Mobile/15E148 Safari/605.1";
     instance.Page.enable();
     instance.Network.enable();
-
-
     instance.Network.setUserAgentOverride({userAgent: userAgent});
     instance.Network.setCacheDisabled({cacheDisabled: true});
     
